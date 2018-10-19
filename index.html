@@ -1,0 +1,12 @@
+<html>
+<title>Titania -> gcal convert</title>
+<body>
+    <h3>Titania -> GCal convert</h3>
+    <p>Huom! Koska aineistossa ei ole mukana vuosilukua, tulee vuodenvaihteessa eri vuoden työvuorot syöttää kahdella ajokerralla.</p>
+    <p>Anna vapaapäiväkoodit pilkkueroteltuna.</p>
+    Vapaapäiväkoodit: <input type=text id="dayOffCodes" value="H, V, /"><br>
+    Tee vuorot vuodelle: <input type=text id="year"><br>
+    <textarea id="titaniacsv" rows=30 cols=110></textarea><br>
+    <input onClick="readTextArea()" id="button1" type=button value="Lataa CSV">
+</body>
+<script src="titania.js"></script>
