@@ -2,13 +2,15 @@
 <title>Titania -> gcal convert</title>
 <body>
     <h3>Titania -> GCal convert</h3>
-    <p>Huom! Koska aineistossa ei ole mukana vuosilukua, tulee vuodenvaihteessa eri vuoden työvuorot syöttää kahdella ajokerralla.</p>
-    <p>Anna vapaapäiväkoodit pilkkueroteltuna.</p>
-    Vapaapäiväkoodit: <input type=text id="dayOffCodes" value="H, V, /"><br><br>
+    <p>Huom! Koska aineistossa ei ole mukana vuosilukua, tulee vuodenvaihteessa eri vuoden ty&ouml;vuorot sy&ouml;tt&auml;&auml; kahdella ajokerralla.</p>
+    <p>Anna vapaap&auml;iv&auml;koodit pilkkueroteltuna.</p>
+    Vapaap&auml;iv&auml;koodit: <input type=text id="dayOffCodes" value="H, V, /"><br><br>
     Tee vuorot vuodelle: <input type=text id="year"><br><br>
-    Kopioi ja liitä työvuorosi tähän ja paina sen jälkeen Lataa CSV:<br>
+    Kopioi ja liit&auml; ty&ouml;vuorosi t&auml;h&auml;n ja paina sen j&auml;lkeen Lataa CSV:<br>
     <textarea id="titaniacsv" rows=30 cols=110></textarea><br>
     <input onClick="readTextArea()" id="button1" type=button value="Lataa CSV"><br>
-    Tallenna tiedosto koneellesi, voit tuoda sen Google Kalenteriin Asetukset -> Tuo ja vie -toiminnolla. Voit valita siellä mihin kalenteriin vuorot tuodaan.<br>
+    Tallenna tiedosto koneellesi, voit tuoda sen Google Kalenteriin Asetukset -> Tuo ja vie -toiminnolla. Voit valita siell&auml; mihin kalenteriin vuorot tuodaan.<br>
+    <p>Lähdekoodit <a href="https://github.com/savikko/titania-to-gcal/">githubissa</a>. download.js by dandavis (danml.com)</p>
 </body>
 <script src="titania.js"></script>
+<script src="download.js"></script>

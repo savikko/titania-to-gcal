@@ -16,7 +16,7 @@ function readTextArea() {
       console.log("Skip, just line here");
     } else {
       var shiftCode = lines[i].charAt(16);
-      if (dayOffCodes.includes(shiftCode)) {
+      if (dayOffCodes.indexOf(shiftCode) !== -1) {
         console.log("vapaapäivä");
       } else {
         var date = lines[i].substring(0, 5);
@@ -30,15 +30,9 @@ function readTextArea() {
       }
     }
   }
-  save_csv(calItem);
+  //save_csv(calItem);
+  download(calItem, "vuorot.csv", "text/csv");
+  
 }
 
 document.getElementById("year").value = new Date().getFullYear();
-
-function save_csv(data) { // funktio tiedoston lataamiseen
-    var hiddenElement = document.createElement("a");
-    hiddenElement.href = "data:text/csv;charset=utf-8," + encodeURI(data);
-    hiddenElement.target = "_blank";
-    hiddenElement.download = "vuorot.csv";
-    hiddenElement.click();
-  }
