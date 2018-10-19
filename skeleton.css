@@ -416,3 +416,7 @@
   
   /* Larger than Desktop HD */
   @media (min-width: 1200px) {}
+
+  textarea {
+    font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+  }
